@@ -1,44 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"> goBarber Web </h1>
 
-## Available Scripts
+<p align="center" float="left">
+<img width=20% src="https://github.com/sinval-albuquerque/goBarber-web/blob/master/src/assets/1_mn6bOs7s6Qbao15PMNRyOA.png">
+<img width=20% src="https://github.com/sinval-albuquerque/goBarber-web/blob/master/src/assets/react-icon.png">
+</p>
 
-In the project directory, you can run:
+<p align="center"> goBarber is a full application using <b>React</b> and <b>Typescript</b>, all made in goStack by Rocketseat. </p>
 
-### `yarn start`
+## Little preview
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](https://github.com/sinval-albuquerque/goBarber-web/blob/master/src/assets/gif.gif)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+##  :mag: Basic Overview
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project was studied some concepts like standardization of React projects, forms validation, toast messages, context API, React Hooks, folder structure, stylization in <b>ReactJS</b>, routes and consumption of <b>external API's</b>. Also, some ideas about <b>styled-components</b>.
 
-### `yarn build`
+## :computer: Features 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React
+* TypeScript
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## :bust_in_silhouette: Author
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<a href="https://www.linkedin.com/in/sinval-albuquerque-8061931b3/">
+ <img style="border-radius": "50%" src="https://avatars2.githubusercontent.com/u/66497792?s=460&u=fa089be69f47a922f66581318ca65777e400bc1f&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Sinval Albuquerque</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feito com ❤️ por Sinval Albuquerque 👋🏽 Entre em contato!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![Gmail Badge](https://img.shields.io/badge/-sinvalalb@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sinvalalb@gmail.com)](mailto:sinvalalb@gmail.com)
