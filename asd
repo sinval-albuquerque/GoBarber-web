@@ -3,8 +3,9 @@ import { isToday, format, parseISO, isAfter } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import DayPicker, { DayModifiers } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
-// import { Link } from 'react-router-dom';
-import { FiClock, FiLock, FiPower } from 'react-icons/fi';
+
+import { FiPower, FiClock } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import {
   Container,
   Header,
@@ -17,6 +18,7 @@ import {
   Appointment,
   Calendar,
 } from './styles';
+
 import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
@@ -38,6 +40,7 @@ interface Appointment {
 
 const Dashboard: React.FC = () => {
   const { user, signOut } = useAuth();
+
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
@@ -86,6 +89,7 @@ const Dashboard: React.FC = () => {
             hourFormatted: format(parseISO(appointment.date), 'HH:mm'),
           };
         });
+
         setAppointments(appointmentsFormatted);
       });
   }, [selectedDate]);
@@ -141,7 +145,9 @@ const Dashboard: React.FC = () => {
             <img src={user.avatar_url} alt={user.name} />
             <div>
               <span>Bem-vindo,</span>
-              <strong>{user.name}</strong>
+              <Link to="/profile">
+                <strong>{user.name}</strong>
+              </Link>
             </div>
           </Profile>
 
@@ -153,7 +159,7 @@ const Dashboard: React.FC = () => {
 
       <Content>
         <Schedule>
-          <h1>Horários Agendados</h1>
+          <h1>Horários agendados</h1>
           <p>
             {isToday(selectedDate) && <span>Hoje</span>}
             <span>{selectedDateAsText}</span>
@@ -171,7 +177,7 @@ const Dashboard: React.FC = () => {
 
                 <strong>{nextAppointment.user.name}</strong>
                 <span>
-                  <FiLock />
+                  <FiClock />
                   {nextAppointment.hourFormatted}
                 </span>
               </div>
