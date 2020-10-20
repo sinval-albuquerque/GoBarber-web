@@ -37,7 +37,8 @@ describe('SignIn Page', () => {
     mockedHistoryPush.mockClear();
   })
   it('should be able to sign in', async () => {
-    const { getByPlaceholderText, getByText } = render(<SignIn />);
+    const { getByPlaceholderText, getByText } = render(<SignIn />
+    );
 
     const emailField = getByPlaceholderText('E-mail');
     const passwordField = getByPlaceholderText('Senha');
@@ -54,7 +55,8 @@ describe('SignIn Page', () => {
   });
 
   it('should not be able to sign in with invalid credentials', async () => {
-    const { getByPlaceholderText, getByText } = render(<SignIn />);
+    const { getByPlaceholderText, getByText } = render(<SignIn />
+    );
 
     const emailField = getByPlaceholderText('E-mail');
     const passwordField = getByPlaceholderText('Senha');
@@ -75,7 +77,8 @@ describe('SignIn Page', () => {
       throw new Error();
     })
 
-    const { getByPlaceholderText, getByText } = render(<SignIn />);
+    const { getByPlaceholderText, getByText } = render(<SignIn />
+    );
 
     const emailField = getByPlaceholderText('E-mail');
     const passwordField = getByPlaceholderText('Senha');
